@@ -45,7 +45,7 @@ module seven_segment_display (
             4'b0000: seg_output = 7'b0111111; // 0
             4'b0001: seg_output = 7'b0000110; // 1
             4'b0010: seg_output = 7'b1011011; // 2
-            4'b0013: seg_output = 7'b1001111; // 3
+            4'b0011: seg_output = 7'b1001111; // 3
             4'b0100: seg_output = 7'b1100110; // 4
             4'b0101: seg_output = 7'b1101101; // 5
             4'b0110: seg_output = 7'b1111101; // 6
@@ -56,11 +56,14 @@ module seven_segment_display (
         endcase
     end
 endmodule
+output
+![Screenshot 2024-09-26 140407](https://github.com/user-attachments/assets/61494843-324a-4968-a0bc-e4700349ed32)
+
 
 
 Testbench for Seven-Segment Display:
 
-// seven_segment_display_tb.v
+// seven_segment_display_tb.v1`
 `timescale 1ns / 1ps
 
 module seven_segment_display_tb;
